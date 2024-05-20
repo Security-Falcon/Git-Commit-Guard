@@ -12,6 +12,10 @@ In software development projects, ensuring the integrity of codebases is essenti
 
 CommitGuard runs as a GitHub Action in response to pull request events. When triggered, it checks each commit in the pull request to ensure it contains a `commit.verification.verified = true` object. If any commits are missing the required sign-off, the action fails, and the pull request is marked as non-compliant. Furthermore, the action will comment on the pull request, telling the assignee about the violation.
 
+### Output
+The Action will comment on the scanned PR if it detectes any unsigned commits. Example: 
+[pr_comment](./assets/pr_comment_output.png)
+
 ## How to Contribute
 
 Contributions to CommitGuard are welcome! To contribute, follow the guide [here](CONTRIBUTING.md)
