@@ -2,6 +2,10 @@
 name: CommitGuard
 description: Verifies if all commits on a branch are signed-off
 
+branding:
+  color: blue
+  icon: shield
+
 inputs:
     owner:
         description: The owner of the repository

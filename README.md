@@ -14,7 +14,7 @@ CommitGuard runs as a GitHub Action in response to pull request events. When tri
 
 ### Output
 The Action will comment on the scanned PR if it detectes any unsigned commits. Example: 
-[pr_comment](./assets/pr_comment_output.png)
+![pr_comment](./assets/pr_comment_output.png)
 
 ## How to Contribute
 
