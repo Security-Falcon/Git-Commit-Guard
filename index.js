@@ -26,7 +26,7 @@ const main = async () => {
 
         if (unsignedCommitsCount > 0) {
             const commentBody = "### :warning: Unsigned Commits detected :warning:\n"
-            + `${unsignedCommitsCount}`+ " unsigned commit(s) have been detected in this Pull Request " +`(Nr.: ${pr_number})`+ ".\n\n"
+            + `${unsignedCommitsCount}`+ " unsigned commit(s) have been detected in this Pull Request " +`(Nr.: #${pr_number})`+ ".\n\n"
             + "Please make sure to **sign-off your commits** before pushing."
             await octokit.rest.issues.createComment({
                 owner,
